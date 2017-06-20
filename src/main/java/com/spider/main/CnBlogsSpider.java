@@ -45,7 +45,7 @@ public class CnBlogsSpider {
         this.date = date;
     }
     public static void main(String[] args){
-        OOSpider.create(Site.me().setSleepTime(1000).setHttpProxy(new HttpHost("127.0.0.1",1080)),
+        OOSpider.create(Site.me().setSleepTime(1000),
                 new ConsolePageModelPipeline(),CnBlogsSpider.class)
                 .addUrl("http://www.cnblogs.com/cielosun").thread(4).run();
     }
