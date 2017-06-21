@@ -27,7 +27,7 @@ public class VogueBrandSpider implements PageProcessor {
     }
     public static void main(String[] args) {
         Spider.create(new VogueBrandSpider()).addUrl("http://brand.vogue.com.cn")
-                .addPipeline(new MyFilePipeline("target/brand")).run();
+                .addPipeline(new ConsolePipeline()).run();
     }
 }
 
