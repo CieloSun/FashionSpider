@@ -1,5 +1,6 @@
-package com.spider.tidy;
+package com.cielo.tidy;
 
+import com.cielo.utils.JSONUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -11,16 +12,17 @@ import java.util.Map;
 /**
  * Created by 63289 on 2017/6/19.
  */
-public class TidyData {
+public class TidyVogueData {
     private static Map tempDB = new HashMap();
-    private final static String path = "data";
+    private final static String fromPath = "target/in";
+    private final static String toPath="target/out";
 
     public static void storeToDB() {
-        File directory = new File(path);
+        File directory = new File(fromPath);
         if (directory.isDirectory()) {
             String[] fileList = directory.list();
             for (String fileName : fileList) {
-                File readFile = new File(path + "/" + fileName);
+                File readFile = new File(fromPath + "/" + fileName);
                 if (!readFile.isDirectory()) {
                     try {
                         try {
@@ -83,7 +85,7 @@ public class TidyData {
             try {
                 Map map = iterator.next();
                 String jsonString = JSONUtils.toJSON(map);
-                File file = new File("vogue" + "/" + DigestUtils.md5((String) map.get("url")) + ".json");
+                File file = new File(toPath + "/" + DigestUtils.md5((String) map.get("url")) + ".json");
                 try {
                     try {
                         PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), "utf-8"));

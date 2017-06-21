@@ -1,5 +1,5 @@
-package com.spider.main;
-import com.spider.pipeline.MyPipeline;
+package com.cielo.spider;
+import com.cielo.pipeline.MyJSONPipeline;
 import us.codecraft.webmagic.*;
 import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.JsonPathSelector;
@@ -41,6 +41,6 @@ public class VogueSpiderProcessor implements PageProcessor {
     }
     public static void main(String[] args) {
         Spider.create(new VogueSpiderProcessor()).addUrl("http://www.vogue.com.cn/fashion/")
-                .addPipeline(new MyPipeline("data")).thread(4).run();
+                .addPipeline(new MyJSONPipeline("target/in")).thread(4).run();
     }
 }

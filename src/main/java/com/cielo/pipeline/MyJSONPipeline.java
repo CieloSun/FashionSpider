@@ -1,4 +1,4 @@
-package com.spider.pipeline;
+package com.cielo.pipeline;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -14,8 +14,8 @@ import java.io.PrintWriter;
 /**
  * Created by 63289 on 2017/6/18.
  */
-public class MyPipeline extends FilePersistentBase implements Pipeline {
-    public MyPipeline(String path){
+public class MyJSONPipeline extends FilePersistentBase implements Pipeline {
+    public MyJSONPipeline(String path){
         this.setPath(path);
     }
     @Override

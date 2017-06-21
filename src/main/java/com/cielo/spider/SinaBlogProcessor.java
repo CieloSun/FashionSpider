@@ -1,4 +1,4 @@
-package com.spider.main;
+package com.cielo.spider;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;

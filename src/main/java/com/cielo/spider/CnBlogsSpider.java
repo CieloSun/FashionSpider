@@ -1,6 +1,5 @@
-package com.spider.main;
+package com.cielo.spider;
 
-import org.apache.http.HttpHost;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.model.ConsolePageModelPipeline;
 import us.codecraft.webmagic.model.OOSpider;
