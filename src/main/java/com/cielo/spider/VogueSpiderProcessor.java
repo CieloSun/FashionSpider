@@ -8,8 +8,8 @@ import us.codecraft.webmagic.selector.JsonPathSelector;
  * Created by 63289 on 2017/6/18.
  */
 public class VogueSpiderProcessor implements PageProcessor {
-    public static final String URL_LIST = "http://www\\.vogue\\.com\\.cn/fashion.*";
-    public static final String URL_POST = "http://www\\.vogue\\.com\\.cn/fashion/[\\w-]+/news_\\w+\\.html";
+    public static final String URL_LIST = "http://www\\.vogue\\.com\\.cn/fashion/trend-report.*";
+    public static final String URL_POST = "http://www\\.vogue\\.com\\.cn/fashion/trend-report/news_\\w+\\.html";
     public static final String URL_SHARE = "http://application\\.self\\.com\\.cn/share/front/total\\?url=http://www\\.vogue\\.com\\.cn/fashion/[\\w-]+/news_\\w+\\.html";
     private Site site = Site.me().setSleepTime(1000).setDomain("http://www.vogue.com.cn");
     @Override
@@ -40,7 +40,7 @@ public class VogueSpiderProcessor implements PageProcessor {
         return site;
     }
     public static void main(String[] args) {
-        Spider.create(new VogueSpiderProcessor()).addUrl("http://www.vogue.com.cn/fashion/")
+        Spider.create(new VogueSpiderProcessor()).addUrl("http://www.vogue.com.cn/fashion/trend-report/")
                 .addPipeline(new MyJSONPipeline("target/in")).thread(4).run();
     }
 }
