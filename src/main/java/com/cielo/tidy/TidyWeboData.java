@@ -4,6 +4,7 @@ import com.cielo.utils.JSONUtils;
 import org.apache.commons.lang.StringEscapeUtils;
 
 import java.io.*;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -13,6 +14,7 @@ import java.util.regex.Pattern;
  */
 public class TidyWeboData {
     private static String path = "target/weibo";
+    private static int cnt = 0;
 
     public static void dictoryMethod(File file) {
         if (file.isDirectory()) {
@@ -45,12 +47,17 @@ public class TidyWeboData {
             String date;
             Pattern patternA = Pattern.compile("\\d+-\\d+-\\d+");
             Pattern patternB = Pattern.compile("\\d+-\\d+");
+            Pattern patternC = Pattern.compile("\\d{1,2}:\\d{1,2}");
             if (patternA.matcher(created_at).find()) {
                 date = created_at.substring(0, 10);
             } else if (patternB.matcher(created_at).find()) {
                 date = "2017-" + created_at.substring(0, 5);
+            } else if (patternC.matcher(created_at).find()) {
+                LocalDate localDate = LocalDate.now();
+                date = localDate.getYear() + "-" + localDate.getMonthValue() + "-" + localDate.getDayOfMonth();
             } else {
-                date = null;
+                file.delete();
+                return;
             }
             map.put("date", date);
             map.remove("created_at");
@@ -82,7 +89,8 @@ public class TidyWeboData {
             printWriter.close();
         } catch (Exception e) {
             file.delete();
-            e.printStackTrace();
+            System.out.println(cnt++ + " error files.");
+//            e.printStackTrace();
         }
     }
 
