@@ -10,8 +10,7 @@ import java.util.List;
  */
 public class TidyBrandData {
     public static void main(String[] args) throws Exception {
-        List<String[]> list1 = new ArrayList();
-        List<String[]> list2 = new ArrayList();
+        List<String[]> list = new ArrayList();
         File file = new File("target/brand/brand.html");
         if (file.canRead()) {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "utf-8"));
@@ -28,19 +27,13 @@ public class TidyBrandData {
                     .replaceAll("<ul .*?>", "").replaceAll("</ul>", "")
                     .replaceAll("<h2 .*?>", "").replaceAll("</h2>", "")
                     .replaceAll("<br><br>", "").split("  ");
-            int cnt=contexts.length;
             for (String string : contexts) {
                 if (string.length() > 1) {
                     String[] toPair = string.split("<br>");
-                    if(list1.size()<cnt/2)
-                    list1.add(toPair);
-                    else list2.add(toPair);
-                    File outPut=new File("target/brand/brand1.json");
+                    list.add(toPair);
+                    File outPut=new File("target/brand/brand.json");
                     FileWriter fileWriter=new FileWriter(outPut);
-                    fileWriter.write(JSONUtils.toJSON(list1));
-                    File outPut2=new File("target/brand/brand2.json");
-                    fileWriter=new FileWriter(outPut2);
-                    fileWriter.write(JSONUtils.toJSON(list2));
+                    fileWriter.write(JSONUtils.toJSON(list));
                 }
             }
         }
