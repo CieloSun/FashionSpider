@@ -1,4 +1,4 @@
-package com.cielo.spider;
+package com.cielo.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;

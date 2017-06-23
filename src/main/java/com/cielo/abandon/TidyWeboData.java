@@ -1,4 +1,4 @@
-package com.cielo.tidy;
+package com.cielo.abandon;
 
 import com.cielo.utils.JSONUtils;
 import org.apache.commons.lang.StringEscapeUtils;
@@ -12,8 +12,9 @@ import java.util.regex.Pattern;
 /**
  * Created by 63289 on 2017/6/22.
  */
+//已废弃
 public class TidyWeboData {
-    private static String path = "target/weibo";
+    private static String path = "target/weibo/data";
     private static int cnt = 0;
 
     public static void dictoryMethod(File file) {
@@ -39,8 +40,10 @@ public class TidyWeboData {
             jsonString = StringEscapeUtils.unescapeJava(jsonString).replaceAll("<.*?>", "");
             Map map = JSONUtils.parseMap(jsonString);
             if (map.get("created_at") == null) {
-                if (map.get("date") == null)
+                if (map.get("date") == null){
+                    System.out.println(cnt++ + " error files.");
                     file.delete();
+                }
                 return;
             }
             String created_at = (String) map.get("created_at");
@@ -57,6 +60,7 @@ public class TidyWeboData {
                 date = localDate.getYear() + "-" + localDate.getMonthValue() + "-" + localDate.getDayOfMonth();
             } else {
                 file.delete();
+                System.out.println(cnt++ + " error files.");
                 return;
             }
             map.put("date", date);

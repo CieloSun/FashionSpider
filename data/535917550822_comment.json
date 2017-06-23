@@ -1,0 +1,74 @@
+{
+    "paginator": {
+        "items": 1,
+        "lastPage": 1,
+        "page": 1
+    },
+    "rateCount": {
+        "picNum": 1,
+        "shop": 0,
+        "total": 1,
+        "used": 0
+    },
+    "rateDanceInfo": {
+        "currentMilles": 1498217976205,
+        "intervalMilles": 21344476205,
+        "showChooseTopic": false,
+        "storeType": 4
+    },
+    "rateList": [
+        {
+            "aliMallSeller": false,
+            "anony": true,
+            "appendComment": "",
+            "attributes": "",
+            "attributesMap": "",
+            "aucNumId": "",
+            "auctionPicUrl": "",
+            "auctionPrice": "",
+            "auctionSku": "颜色分类:浅蓝色",
+            "auctionTitle": "",
+            "buyCount": 0,
+            "carServiceLocation": "",
+            "cmsSource": "天猫",
+            "displayRatePic": "",
+            "displayRateSum": 0,
+            "displayUserLink": "",
+            "displayUserNick": "t***o",
+            "displayUserNumId": "",
+            "displayUserRateLink": "",
+            "dsr": 0.0,
+            "fromMall": true,
+            "fromMemory": 0,
+            "gmtCreateTime": 1476873500000,
+            "id": 288744519569,
+            "pics": [
+                "//img.alicdn.com/bao/uploaded/i1/182710303523759495/TB2XtkpX0uO.eBjSZFCXXXULFXa_!!0-rate.jpg",
+                "//img.alicdn.com/bao/uploaded/i1/182710303523817214/TB2drkrX8yN.eBjSZFgXXXmGXXa_!!0-rate.jpg",
+                "//img.alicdn.com/bao/uploaded/i1/182710303523852593/TB2.aCEX9iJ.eBjSspfXXbBKFXa_!!0-rate.jpg"
+            ],
+            "picsSmall": "",
+            "position": "",
+            "rateContent": "终于收到了，因为住得比较近，去他家店里看过。收到实物跟店看的一样的。不错！",
+            "rateDate": "2016-10-19 18:38:20",
+            "reply": "亲的支持是我们成长发展的基石、提供优质服务的动力， 我们承诺会以更快更好的服务回馈我们的顾客，也期待着您在将来为我们的发展提出宝贵意见。 谢谢亲送的大红花，O(&cap;_&cap;)O~~",
+            "sellerId": 2529360066,
+            "serviceRateContent": "",
+            "structuredRateList": [],
+            "tamllSweetLevel": 4,
+            "tmallSweetPic": "tmall-grade-t4-18.png",
+            "tradeEndTime": 1476873301000,
+            "tradeId": "",
+            "useful": true,
+            "userIdEncryption": "",
+            "userInfo": "",
+            "userVipLevel": 0,
+            "userVipPic": ""
+        }
+    ],
+    "searchinfo": "",
+    "tags": "",
+    "itemId": "535917550822",
+    "sellerId": "2529360066",
+    "url": "https://rate.tmall.com/list_detail_rate.htm?itemId=535917550822&sellerId=2529360066"
+}
