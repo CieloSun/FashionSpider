@@ -1,7 +1,6 @@
 package com.cielo.tidy;
 
 import com.cielo.utils.JSONUtils;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.io.*;
@@ -34,32 +33,27 @@ public class TidyVogueData {
                                     fileString += tempString;
                                 }
                                 bufferedReader.close();
-                                try {
-                                    Map map = JSONUtils.parseMap(fileString);
-                                    String url = (String) map.get("url");
-                                    if (url == null) continue;
-                                    String title = (String) map.get("title");
-                                    if (title == null) {
-                                        String share = (String) map.get("share");
-                                        if (share == null) continue;
-                                    } else {
-                                        String date = ((String) map.get("date")).replaceAll("[年月]", "-")
-                                                .replaceAll("日", "");
-                                        if (date == null) continue;
-                                        map.put("date", date);
-                                        String article = (String) map.get("article");
-                                        if (article == null) continue;
-                                        map.put("article", article);
-                                    }
-                                    Map exist = (Map) tempDB.get(map.get("url"));
-                                    if (exist != null) {
-                                        map.putAll(exist);
-                                    }
-                                    tempDB.put(map.get("url"), map);
-                                } catch (IOException e) {
-                                    System.out.println("cannot trans json to map.");
-                                    e.printStackTrace();
+                                Map map = JSONUtils.json2Map(fileString);
+                                String url = (String) map.get("url");
+                                if (url == null) continue;
+                                String title = (String) map.get("title");
+                                if (title == null) {
+                                    String share = (String) map.get("share");
+                                    if (share == null) continue;
+                                } else {
+                                    String date = ((String) map.get("date")).replaceAll("[年月]", "-")
+                                            .replaceAll("日", "");
+                                    if (date == null) continue;
+                                    map.put("date", date);
+                                    String article = (String) map.get("article");
+                                    if (article == null) continue;
+                                    map.put("article", article);
                                 }
+                                Map exist = (Map) tempDB.get(map.get("url"));
+                                if (exist != null) {
+                                    map.putAll(exist);
+                                }
+                                tempDB.put(map.get("url"), map);
                             } catch (IOException e) {
                                 System.out.println("cannot readFile.");
                                 e.printStackTrace();
@@ -87,20 +81,15 @@ public class TidyVogueData {
                 String jsonString = JSONUtils.toJSON(map);
                 File file = new File(toPath + "/" + DigestUtils.md5((String) map.get("url")) + ".json");
                 try {
-                    try {
-                        PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), "utf-8"));
-                        printWriter.print(jsonString);
-                        printWriter.close();
-                    } catch (FileNotFoundException e) {
-                        System.out.println("File not found");
-                        e.printStackTrace();
-                    }
-                } catch (UnsupportedEncodingException e) {
-                    System.out.println("Unsupported charset utf-8");
+                    PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), "utf-8"));
+                    printWriter.print(jsonString);
+                    printWriter.close();
+                } catch (FileNotFoundException e) {
+                    System.out.println("File not found");
                     e.printStackTrace();
                 }
-            } catch (JsonProcessingException e) {
-                System.out.println("cannot change to JSON");
+            } catch (UnsupportedEncodingException e) {
+                System.out.println("Unsupported charset utf-8");
                 e.printStackTrace();
             }
         }

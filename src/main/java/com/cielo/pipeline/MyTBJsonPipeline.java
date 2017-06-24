@@ -21,12 +21,15 @@ public class MyTBJsonPipeline extends FilePersistentBase implements Pipeline {
     @Override
     public void process(ResultItems resultItems, Task task) {
         try {
-            Iterator iterator=resultItems.getAll().values().iterator();
-            while (iterator.hasNext()){
-                Map map=(Map)iterator.next();
+            Iterator iterator = resultItems.getAll().values().iterator();
+            while (iterator.hasNext()) {
+                Map map = (Map) iterator.next();
+//                System.out.println(map);
                 String name = map.get("itemId").toString();
-                if(map.get("raw_title")==null){
-                    name+="_comment";
+                if (map.get("raw_title") == null) {
+                    if (map.get("rateList")!=null)
+                        name += "_tmall_comment";
+                    else name += "_taobao_comment";
                 }
                 PrintWriter printWriter = new PrintWriter(new FileWriter(this.getFile(path + name + ".json")));
                 printWriter.write(JSON.toJSONString(map));

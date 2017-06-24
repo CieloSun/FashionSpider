@@ -38,7 +38,7 @@ public class TidyWeboData {
             }
             bufferedReader.close();
             jsonString = StringEscapeUtils.unescapeJava(jsonString).replaceAll("<.*?>", "");
-            Map map = JSONUtils.parseMap(jsonString);
+            Map map = JSONUtils.json2Map(jsonString);
             if (map.get("created_at") == null) {
                 if (map.get("date") == null){
                     System.out.println(cnt++ + " error files.");

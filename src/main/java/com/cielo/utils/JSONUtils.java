@@ -1,26 +1,28 @@
 package com.cielo.utils;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
 
-import java.io.IOException;
 import java.util.Map;
 
 /**
  * Created by 63289 on 2017/6/19.
  */
 public class JSONUtils {
-    static ObjectMapper objectMapper = new ObjectMapper();
-
-    public static String toJSON(Object o) throws JsonProcessingException {
-        return objectMapper.writeValueAsString(o);
+    public static String toJSON(Object o) {
+        return JSON.toJSONString(o);
     }
 
-    public static <T> T fromJSON(String jsonStr, Class<T> pojoClass) throws IOException {
-        return objectMapper.readValue(jsonStr, pojoClass);
+    public static Map<String, Object> json2Map(String jsonStr) {
+        if (jsonStr == null || jsonStr.isEmpty()) return null;
+        Map<String, Object> map = JSON.parseObject(jsonStr, Map.class);
+        return map;
     }
-
-    public static Map<String, Object> parseMap(String jsonStr) throws IOException {
-        return (jsonStr==null||jsonStr.isEmpty())? null: objectMapper.readValue(jsonStr, Map.class);
+    public static void main(String[] args){
+        String jsonStr="{\"a\":\"b\",\"c\":\"d\"}";
+        Map map=json2Map(jsonStr);
+        System.out.println(map.toString());
+        map.put("e","f");
+        System.out.println(map.toString());
     }
 }
