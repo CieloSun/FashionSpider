@@ -31,22 +31,18 @@
       <file leaf-file-name="VogueSpiderProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueSpiderProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1152">
-              <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2084#2085#0" expanded="false" />
-                <element signature="e#2111#2112#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="13" column="90" lean-forward="false" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TBSearch.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TBSearch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/TBSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2185">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="407">
+              <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyTBJsonPipeline.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyTBJsonPipeline.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+            <state relative-caret-position="612">
+              <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,6 +157,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>println</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -198,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/utils/WeiboID.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cielo/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueSpiderProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyFilePipline.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyFilePipeline.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueBrandSpider.java" />
@@ -219,6 +219,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyVogueData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/utils/JSONUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueSpiderProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/TBSearch.java" />
       </list>
     </option>
@@ -1106,12 +1107,12 @@
       <workItem from="1498180931098" duration="480000" />
       <workItem from="1498187360488" duration="18663000" />
       <workItem from="1498215958536" duration="2303000" />
-      <workItem from="1498305777816" duration="11353000" />
+      <workItem from="1498305777816" duration="12408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169998000" />
+    <option name="totallyTimeSpent" value="171053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -1451,18 +1452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueSpiderProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2084#2085#0" expanded="false" />
-            <element signature="e#2111#2112#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueBrandSpider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1534,20 +1523,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/TBSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueSpiderProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2185">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="13" column="90" lean-forward="false" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/TBSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        <state relative-caret-position="407">
+          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

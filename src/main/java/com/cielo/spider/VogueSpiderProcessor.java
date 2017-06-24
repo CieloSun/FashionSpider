@@ -11,7 +11,7 @@ public class VogueSpiderProcessor implements PageProcessor {
     public static final String URL_LIST = "http://www\\.vogue\\.com\\.cn/fashion/trend-report.*";
     public static final String URL_POST = "http://www\\.vogue\\.com\\.cn/fashion/trend-report/news_\\w+\\.html";
     public static final String URL_SHARE = "http://application\\.self\\.com\\.cn/share/front/total\\?url=http://www\\.vogue\\.com\\.cn/fashion/[\\w-]+/news_\\w+\\.html";
-    private Site site = Site.me().setSleepTime(1000).setDomain("http://www.vogue.com.cn");
+    private Site site = Site.me().setSleepTime(1000).setDomain("http://www.vogue.com.cn").setUserAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0");
     @Override
     public void process(Page page) {
         // 如果是请求分享数页面

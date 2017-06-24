@@ -24,7 +24,6 @@ public class MyTBJsonPipeline extends FilePersistentBase implements Pipeline {
             Iterator iterator = resultItems.getAll().values().iterator();
             while (iterator.hasNext()) {
                 Map map = (Map) iterator.next();
-//                System.out.println(map);
                 String name = map.get("itemId").toString();
                 if (map.get("raw_title") == null) {
                     if (map.get("rateList")!=null)
