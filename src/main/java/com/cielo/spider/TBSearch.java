@@ -2,7 +2,6 @@ package com.cielo.spider;
 
 import com.cielo.pipeline.MyTBJsonPipeline;
 import com.cielo.utils.JSONUtils;
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Spider;
@@ -11,6 +10,7 @@ import us.codecraft.webmagic.selector.JsonPathSelector;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,7 +22,7 @@ public class TBSearch implements PageProcessor {
     private static final String tmallComment = "https://rate\\.tmall\\.com/list_detail_rate\\.htm.*";
     private static final String tbComment = "https://rate\\.taobao\\.com/feedRateList\\.htm.*";
     private static final String sec = "https://sec\\.taobao\\.com/.*";
-    private Site site = Site.me().setSleepTime(1000).setUserAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0");
+    private Site site = Site.me().setSleepTime(3000).setUserAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0");
 
     public String convert(String utfString) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -84,6 +84,7 @@ public class TBSearch implements PageProcessor {
         }
         //如果是列表页面
         else if (page.getUrl().regex(urlSearch).match()) {
+//            System.out.println("match list.");
             //获取页面script并转码为中文
             String origin = convert(page.getHtml().xpath("//head/script[7]").toString());
             //从script中获取json
@@ -93,24 +94,30 @@ public class TBSearch implements PageProcessor {
                 //清理乱码
                 String jsonString = jsonMatcher.group().replaceAll("\"navEntries\".*?,", "")
                         .replaceAll(",\"p4pdata\".*?\\\"\\}\"", "").replaceAll("\"spuList\".*?,", "");
+//                System.out.println(jsonString);
                 //选择auctions列表
                 List<String> auctions = new JsonPathSelector("mods.itemlist.data.auctions[*]").selectList(jsonString);
                 //对于每一项商品
                 for (String auction : auctions) {
+//                    System.out.println(auction);
                     Map map = JSONUtils.json2Map(auction);
                     //获取评论url
                     String commentUrl = (String) map.get("comment_url");
+//                    System.out.println(commentUrl);
                     if (commentUrl == null) continue;
                     //获取商品id
                     Matcher itemIdMatcher = Pattern.compile("id=\\d+").matcher(commentUrl);
                     String itemIdString = null;
                     if (itemIdMatcher.find()) itemIdString = itemIdMatcher.group().replace("id=", "");
                     else continue;
+//                    System.out.println(itemIdString);
                     //获取商店ip
                     String shopLink = new JsonPathSelector("shopLink").select(auction);
                     Matcher shopIdMatcher = Pattern.compile("user_number_id=\\d+").matcher(shopLink);
                     String shopIdString = null;
                     if (shopIdMatcher.find()) shopIdString = shopIdMatcher.group().replace("user_number_id=", "");
+                    else continue;
+//                    System.out.println(shopIdString);
                     //记录信息
                     map.put("itemId", itemIdString);
                     map.put("sellerId", shopIdString);
