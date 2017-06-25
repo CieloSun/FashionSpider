@@ -29,6 +29,7 @@ public class MyTBJsonPipeline extends FilePersistentBase implements Pipeline {
                     if (map.get("rateList")!=null)
                         name += "_tmall_comment";
                     else name += "_taobao_comment";
+                    name+="_"+map.get("currentPage");
                 }
                 PrintWriter printWriter = new PrintWriter(new FileWriter(this.getFile(path + name + ".json")));
                 printWriter.write(JSON.toJSONString(map));

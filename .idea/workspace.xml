@@ -31,22 +31,18 @@
       <file leaf-file-name="VogueSpiderProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueSpiderProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="36">
               <caret line="13" column="90" lean-forward="false" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2173#2174#0" expanded="false" />
-                <element signature="e#2200#2201#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TBSearch.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/TBSearch.java">
+      <file leaf-file-name="YOKASpider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/YOKASpider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            <state relative-caret-position="936">
+              <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,81 +53,33 @@
       <file leaf-file-name="TidyVogueData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyVogueData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3132">
-              <caret line="93" column="13" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSONUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/utils/JSONUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#236#237#0" expanded="false" />
-                <element signature="e#279#280#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSON.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.28/fastjson-1.2.28.jar!/com/alibaba/fastjson/JSON.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10584">
-              <caret line="338" column="27" lean-forward="false" selection-start-line="338" selection-start-column="27" selection-end-line="338" selection-end-column="27" />
+            <state relative-caret-position="180">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/cielo/test/Test.java">
+      <file leaf-file-name="TidyBrandData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyBrandData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="341">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="TBSearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/TBSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyJSONPipeline.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyJSONPipeline.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="684">
+              <caret line="73" column="9" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="73" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#537#538#0" expanded="false" />
-                <element signature="e#571#572#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyTBJsonPipeline.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -139,13 +87,19 @@
       <file leaf-file-name="VogueBrandSpider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueBrandSpider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#754#755#0" expanded="false" />
-                <element signature="e#781#782#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTBJsonPipeline.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="723">
+              <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/spider/main/GithubRepoPageProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/main/GithubRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/main/SinaBlogPo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spider/main/GitHubPo.java" />
@@ -205,12 +158,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyFilePipline.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyFilePipeline.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueBrandSpider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyBrandData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/WeiboSpider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/WeiboLoginAndGetCookie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/utils/StringEncodeUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyWeboData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cielo/abandon/TidyWeboData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/selenium/WeiboLoginAndGetCookie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/selenium/AmazonSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/selenium/TBSearch.java" />
@@ -219,10 +170,14 @@
         <option value="$PROJECT_DIR$/data/488292954f4d855c12c653b8365d5c6a.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyJSONPipeline.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyVogueData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cielo/utils/JSONUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueSpiderProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cielo/utils/Unicode2utf8Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cielo/utils/JSONUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyBrandData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cielo/utils/JSON.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cielo/abandon/TidyWeboData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyVogueData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cielo/spider/TBSearch.java" />
       </list>
     </option>
@@ -628,14 +583,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="JSONUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="JSON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.cielo.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.cielo.utils.JSONUtils" />
+      <option name="MAIN_CLASS_NAME" value="com.cielo.utils.JSON" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1061,12 +1016,12 @@
       <item index="2" class="java.lang.String" itemvalue="Application.WeiboLoginAndGetCookie" />
       <item index="3" class="java.lang.String" itemvalue="Application.TidyWeboData" />
       <item index="4" class="java.lang.String" itemvalue="Application.TBSearch" />
-      <item index="5" class="java.lang.String" itemvalue="Application.JSONUtils" />
+      <item index="5" class="java.lang.String" itemvalue="Application.JSON" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.TBSearch" />
-        <item index="1" class="java.lang.String" itemvalue="Application.JSONUtils" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JSON" />
         <item index="2" class="java.lang.String" itemvalue="Application.WeiboLoginAndGetCookie" />
         <item index="3" class="java.lang.String" itemvalue="Application.TidyWeboData" />
         <item index="4" class="java.lang.String" itemvalue="Application.TidyBrandData" />
@@ -1112,15 +1067,15 @@
       <workItem from="1498215958536" duration="2303000" />
       <workItem from="1498305777816" duration="12830000" />
       <workItem from="1498319137769" duration="466000" />
-      <workItem from="1498353946257" duration="2172000" />
+      <workItem from="1498353946257" duration="7635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174113000" />
+    <option name="totallyTimeSpent" value="179576000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1770" extended-state="7" />
+    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1174,13 +1129,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/us/codecraft/webmagic-core/0.7.1/webmagic-core-0.7.1.jar!/us/codecraft/webmagic/Spider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="386" column="33" lean-forward="true" selection-start-line="386" selection-start-column="33" selection-end-line="386" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/us/codecraft/webmagic-core/0.7.1/webmagic-core-0.7.1.jar!/us/codecraft/webmagic/ResultItems.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -1283,13 +1231,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/SinaBlogProcessor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/YOKASpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/CnBlogsSpider.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/utils/StringEncodeUtils.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
@@ -1397,82 +1338,12 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyFilePipeline.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyConsolePipeline.java" />
     <entry file="file://$PROJECT_DIR$/data/s.taobao.com/488292954f4d855c12c653b8365d5c6a.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyBrandData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/bfcd36917879cb6f4ccbcb1e82089319.json" />
     <entry file="file://$PROJECT_DIR$/data/488292954f4d855c12c653b8365d5c6a.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/selenium/WeiboLoginAndGetCookie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/abandon/TidyWeboData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="39" column="55" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/ELLESpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueBrandSpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#754#755#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyJSONPipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#537#538#0" expanded="false" />
-            <element signature="e#571#572#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyVogueData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3132">
-          <caret line="93" column="13" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.28/fastjson-1.2.28.jar!/com/alibaba/fastjson/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10584">
-          <caret line="338" column="27" lean-forward="false" selection-start-line="338" selection-start-column="27" selection-end-line="338" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1487,45 +1358,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/utils/JSONUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/utils/Unicode2utf8Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="648">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/utils/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/abandon/TidyWeboData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#236#237#0" expanded="false" />
-            <element signature="e#279#280#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyJSONPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/selenium/WeiboLoginAndGetCookie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.28/fastjson-1.2.28.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="138" column="5" lean-forward="true" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/ELLESpider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueBrandSpider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/VogueSpiderProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="36">
           <caret line="13" column="90" lean-forward="false" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/YOKASpider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2173#2174#0" expanded="false" />
-            <element signature="e#2200#2201#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyBrandData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="341">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/tidy/TidyVogueData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/spider/TBSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        <state relative-caret-position="684">
+          <caret line="73" column="9" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="73" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cielo/pipeline/MyTBJsonPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

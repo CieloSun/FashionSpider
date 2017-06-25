@@ -1,5 +1,5 @@
 package com.cielo.tidy;
-import com.cielo.utils.JSONUtils;
+import com.alibaba.fastjson.JSON;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public class TidyBrandData {
                     list.add(toPair);
                     File outPut=new File("target/brand/brand.json");
                     FileWriter fileWriter=new FileWriter(outPut);
-                    fileWriter.write(JSONUtils.toJSON(list));
+                    fileWriter.write(JSON.toJSONString(list));
                 }
             }
         }

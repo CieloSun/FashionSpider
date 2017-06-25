@@ -1,6 +1,6 @@
 package com.cielo.tidy;
 
-import com.cielo.utils.JSONUtils;
+import com.alibaba.fastjson.JSON;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.io.*;
@@ -33,7 +33,7 @@ public class TidyVogueData {
                                     fileString += tempString;
                                 }
                                 bufferedReader.close();
-                                Map map = JSONUtils.json2Map(fileString);
+                                Map map = JSON.parseObject(fileString);
                                 String url = (String) map.get("url");
                                 if (url == null) continue;
                                 String title = (String) map.get("title");
@@ -78,7 +78,7 @@ public class TidyVogueData {
         while (iterator.hasNext()) {
             try {
                 Map map = iterator.next();
-                String jsonString = JSONUtils.toJSON(map);
+                String jsonString = com.alibaba.fastjson.JSON.toJSONString(map);
                 File file = new File(toPath + "/" + DigestUtils.md5((String) map.get("url")) + ".json");
                 try {
                     PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), "utf-8"));

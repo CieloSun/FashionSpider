@@ -1,7 +1,7 @@
 package com.cielo.abandon;
 
-import com.cielo.utils.JSONUtils;
-import org.apache.commons.lang.StringEscapeUtils;
+import com.alibaba.fastjson.JSON;
+import com.cielo.utils.Unicode2utf8Utils;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -37,8 +37,8 @@ public class TidyWeboData {
                 jsonString += tempString;
             }
             bufferedReader.close();
-            jsonString = StringEscapeUtils.unescapeJava(jsonString).replaceAll("<.*?>", "");
-            Map map = JSONUtils.json2Map(jsonString);
+            jsonString = Unicode2utf8Utils.convert(jsonString).replaceAll("<.*?>", "");
+            Map map = JSON.parseObject(jsonString);
             if (map.get("created_at") == null) {
                 if (map.get("date") == null){
                     System.out.println(cnt++ + " error files.");
@@ -89,7 +89,7 @@ public class TidyWeboData {
                 userMap.remove("following");
             }
             PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file)));
-            printWriter.print(JSONUtils.toJSON(map));
+            printWriter.print(com.alibaba.fastjson.JSON.toJSONString(map));
             printWriter.close();
         } catch (Exception e) {
             file.delete();
